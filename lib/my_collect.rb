@@ -8,7 +8,7 @@ def my_collect(input_array)
     counter = 0
     output = []
     while counter < input_array.size
-      output << input_array[counter]
+      output << yield(input_array[counter])
     end
     output
   end
